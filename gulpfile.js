@@ -5,6 +5,7 @@ var header = require('gulp-header');
 var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var uglify = require('gulp-uglify');
+var filter = require('gulp-filter');
 var pkg = require('./package.json');
 
 // Set the banner content
@@ -18,7 +19,7 @@ var banner = ['/*!\n',
 
 // Compiles SCSS files from /scss into /css
 gulp.task('sass', function() {
-  return gulp.src('scss/grayscale.scss')
+  return gulp.src('scss/freelancer.scss')
     .pipe(sass())
     .pipe(header(banner, {
       pkg: pkg
@@ -31,7 +32,7 @@ gulp.task('sass', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['sass'], function() {
-  return gulp.src('css/grayscale.css')
+  return gulp.src('css/freelancer.css')
     .pipe(cleanCSS({
       compatibility: 'ie8'
     }))
@@ -46,7 +47,7 @@ gulp.task('minify-css', ['sass'], function() {
 
 // Minify custom JS
 gulp.task('minify-js', function() {
-  return gulp.src('js/grayscale.js')
+  return gulp.src('js/freelancer.js')
     .pipe(uglify())
     .pipe(header(banner, {
       pkg: pkg
