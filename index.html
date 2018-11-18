@@ -269,63 +269,92 @@
           <h2 class="mb-5">Projects</h2>
 
           <div id="accordion">
-            <div class="card">
-              <div class="card-header" id="headingOne">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    <h3 class="mb-0">Patient Information Distributed System</h3>
-                  </button>
-                  <div class="subheading mb-3" style="margin-left: 1.3%;">SpringBoot, Cassandra DB, HazelCast, REST, AWS, ActiveMQ</div>
-                </h5>
+            <div class="row">
+              <div class="column">
+                <div class="card" style="width: 35rem;">
+                  <div class="card-header" id="headingOne" style="height: 10rem; text-align: center;">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <h3 class="mb-0" style="white-space: pre-wrap;">Patient Information Distributed System</h3>
+                      </button>
+                      <div class="subheading mb-3" style="text-align: center;">Java, SpringBoot, Cassandra DB, HazelCast, REST, AWS, ActiveMQ</div>
+                    </h5>
+                  </div>
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul>
+                        <li>Implemented end-to-end CRUD operations for data storage and retrieval.</li>
+                        <li>Developed a custom-caching service to improve performance and reduce serving time for frequent queries.</li>
+                        <li>Designed a distributed architecture to make the application robust and achieve high-availability.</li>
+                        <li>Developed end-points as REST APIs to enable other applications interface with the services</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                  <ul>
-                    <li>Implemented end-to-end CRUD operations for data storage and retrieval.</li>
-                    <li>Developed a custom-caching service to improve performance and reduce serving time for frequent queries.</li>
-                    <li>Designed a distributed architecture to make the application robust and achieve high-availability.</li>
-                    <li>Developed end-points as REST APIs to enable other applications interface with the services</li>
-                  </ul>
+
+              <div class="column">
+
+                <div class="card" style="width: 35rem;">
+                  <div class="card-header" id="headingTwo" style="height: 10rem; text-align: center;">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3 class="mb-0" style="white-space: pre-wrap;">Link Prediction in Facebook Network Using Deep Neural Networks</h3>
+                      </button>
+                      <div class="subheading mb-3" style="margin-left: 1.3%; text-align: center;">Python, NumPy, TensorFlow, Keras</div>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <li>Developed a model that uses permutations of graph to simulate the past states.</li>
+                      <li>Using the simulated past states of graph, trained a deep neural network to study evolution of the graph over time.</li>
+                      <li>Predicted link-formation with 90% accuracy for 4000 nodes and over 80,000 edges.</li>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    <h3 class="mb-0">Link Prediction in Facebook Network Using Deep Neural Networks</h3>
-                  </button>
-                  <div class="subheading mb-3" style="margin-left: 1.3%;">Python, NumPy, TensorFlow, Keras</div>
-                </h5>
-              </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                  <li>Developed a model that uses permutations of graph to simulate the past states.</li>
-                  <li>Using the simulated past states of graph, trained a deep neural network to study evolution of the graph over time.</li>
-                  <li>Predicted link-formation with 90% accuracy for 4000 nodes and over 80,000 edges.</li>
+            <div class="row">
+              <div class="column">
+                <div class="card" style="width: 35rem;">
+                  <div class="card-header" id="headingThree" style="height: 10rem; text-align: center;">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3 class="mb-0" style="white-space: pre-wrap;">Improving Recommender Systems Using User-Credibility</h3>
+                      </button>
+                      <div class="subheading mb-3" style="margin-left: 1.3%; text-align: center;">Python, Pandas, NumPy</div>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <li>Developed a custom algorithm for movie recommendations working with MovieLens dataset.</li>
+                      <li>Algorithm calculated user-credibility score based on level of user-expertise determining importance of his ratings.</li>
+                      <li>Successfully improved the base performance of existing item-item collaborative filtering system by 4-6%.</li>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    <h3 class="mb-0">Improving Recommender Systems Using User-Credibility</h3>
-                  </button>
-                  <div class="subheading mb-3" style="margin-left: 1.3%;">Python, Pandas, NumPy</div>
-                </h5>
-              </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                  <li>Developed a custom algorithm for movie recommendations working with MovieLens dataset.</li>
-                  <li>Algorithm calculated user-credibility score based on level of user-expertise determining importance of his ratings.</li>
-                  <li>Successfully improved the base performance of existing item-item collaborative filtering system by 4-6%.</li>
+              <div class="column">
+                <div class="card" style="width: 35rem;">
+                  <div class="card-header" id="headingFour" style="height: 10rem; text-align: center;">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h3 class="mb-0" style="white-space: pre-wrap;">OBD-II Reader Android Application</h3>
+                      </button>
+                      <div class="subheading mb-3" style="margin-left: 1.3%; text-align: center;">Java, Android, XML</div>
+                    </h5>
+                  </div>
+                  <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                      <li>Developed a custom algorithm for movie recommendations working with MovieLens dataset.</li>
+                      <li>Algorithm calculated user-credibility score based on level of user-expertise determining importance of his ratings.</li>
+                      <li>Successfully improved the base performance of existing item-item collaborative filtering system by 4-6%.</li>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
           </div>
 
         </div>
